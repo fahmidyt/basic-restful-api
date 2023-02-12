@@ -21,14 +21,14 @@ interface QueryProps {
 
 const sortValidation: yup.ObjectSchema<SortType> = yup
   .object({
-    key: yup.string<'name'>().required(),
+    key: yup.string<'name'>().oneOf(["name"]).required(),
     desc: yup.boolean().required(),
   })
   .required()
 
 const filterValidation: yup.ObjectSchema<FilterType> = yup
   .object({
-    key: yup.string<'name'>().required(),
+    key: yup.string<'name'>().oneOf(["name"]).required(),
     value: yup.string().required(),
   })
   .required()
