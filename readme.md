@@ -18,8 +18,8 @@ You can personally change configuration such as Port in `./src/constants`
 Folder structure will be like this:
 ```
 - docs
---> routes (this is where i put swagger documentation)
-- src (this is all of code i place)
+--> routes       <this is where i put swagger documentation>
+- src            <this is all of code i place>
 --> constants    <mostly for redefine .env or constants variables>
 --> controllers  <this is where controllers, validation, services>
 --> middlewares  <custom middlewares>
