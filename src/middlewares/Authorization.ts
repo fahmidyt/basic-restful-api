@@ -28,7 +28,6 @@ function extractToken(headers: IncomingHttpHeaders): string | null {
 function verifyToken(token: string) {
   try {
     const data = jwt.verify(token, JWT_SECRET_ACCESS_TOKEN)
-    console.log(data)
     return data
   } catch (err) {
     if (err instanceof TokenExpiredError) 
